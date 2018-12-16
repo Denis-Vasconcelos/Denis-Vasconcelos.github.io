@@ -2691,14 +2691,14 @@ body {
   color: #232323;
 }
 .cid-rcodFLXPiD {
-  padding-top: 0px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-rcolLMH0J0 {
   background: #ffffff;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: linear-gradient(45deg, #ffffff, #ffffff);
 }
 .cid-rcolLMH0J0 .image-block {
@@ -2720,7 +2720,7 @@ body {
 .cid-rcoej0qguJ {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #e94f46;
+  background-image: url("../../../assets/images/background2.jpg");
 }
 .cid-rcoej0qguJ .mbr-section-subtitle {
   color: #ffffff;
@@ -2806,28 +2806,6 @@ body {
 .cid-rcomWGUhgp .mbr-section-btn {
   color: #232323;
 }
-.cid-rcoihRm49X {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-image: url("../../../assets/images/smartphone-1894723-1280-1280x853.jpg");
-}
-.cid-rcoiivF5XT {
-  padding-top: 60px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-rcoiivF5XT .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rcoidDFkza {
-  padding-top: 60px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
-}
-.cid-rcoidDFkza .mbr-text,
-.cid-rcoidDFkza blockquote {
-  color: #767676;
-}
 .cid-rbK31YifLN {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -2903,8 +2881,8 @@ body {
   padding-right: 1rem;
 }
 .cid-rcohJ20qa9 {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #ffffff;
 }
 .cid-rcohJ20qa9 .testimonial-text {
