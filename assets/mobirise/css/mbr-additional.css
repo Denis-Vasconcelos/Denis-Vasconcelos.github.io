@@ -2721,7 +2721,7 @@ body {
   background-image: url("../../../assets/images/background2.jpg");
 }
 .cid-rcoej0qguJ .mbr-section-subtitle {
-  color: #ffffff;
+  color: #767676; /*#ffffff;*/
 }
 .cid-rcoej0qguJ .media-container-row {
   -webkit-flex-wrap: wrap;
@@ -2774,7 +2774,7 @@ body {
   }
 }
 .cid-rcoej0qguJ H2 {
-  color: #ffffff;
+  color: #767676; /*#ffffff;*/
 }
 .cid-rcomWGUhgp {
   padding-top: 40px;
