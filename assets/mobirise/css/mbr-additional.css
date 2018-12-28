@@ -2846,6 +2846,13 @@ body {
   position: relative;
   background-color: #efefef;
 }
+.cid-rbK1YNlIvq .accordion-content {
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.cid-rbK1YNlIvq .panel-group {
+  width: 100%;
+}
 .cid-rbK1YNlIvq p {
   color: #767676;
 }
