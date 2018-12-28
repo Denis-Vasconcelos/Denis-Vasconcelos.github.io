@@ -2847,11 +2847,11 @@ body {
   background-color: #efefef;
 }
 .cid-rbK1YNlIvq .accordion-content {
-  flex-basis: 90%;
-  -webkit-flex-basis: 90%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 80%;
 }
 .cid-rbK1YNlIvq .panel-group {
-  width: 90%;
+  width: 100%;
 }
 .cid-rbK1YNlIvq p {
   color: #767676;
