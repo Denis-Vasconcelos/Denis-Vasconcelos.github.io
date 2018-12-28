@@ -1,0 +1,76 @@
+.perfil.template {
+    font-family: Montserrat, "sans serif";
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 45px 0;
+    position: relative;
+}
+
+.perfil.template .perfil-title {
+    font-size: 15px;
+    color: rgb(55, 62, 76);
+}
+
+.perfil.template .perfil-subtitle {
+    color: #337ab7;
+    font-size: 18px;
+}
+
+.perfil.template .box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.perfil.template .box .txt {
+    padding-left: 60px;
+}
+
+.perfil.template .box .title {
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(20, 95, 250);
+    margin-bottom: 30px;
+}
+
+.perfil.template .box .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(55, 62, 76);
+    margin-bottom: 30px;
+}
+
+.perfil.template .box .media {
+    overflow: visible;
+}
+
+.perfil.template .box .media img {
+    max-width: none;
+}
+
+.perfil.template .box .video-container {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+@media (max-width:767px) {
+    .perfil.template .box {
+        display: block;
+        text-align: center;
+    }
+    .perfil.template .col.txt {
+        padding: 0;
+    }
+    .perfil.template .box img {
+        margin: 0 auto 30px;
+    }
+}
