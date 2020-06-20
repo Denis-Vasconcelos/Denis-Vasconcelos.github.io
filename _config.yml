@@ -43,15 +43,15 @@ authors:
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
 # Plugins
+#=============================================
 plugins:
   - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-archives
   - jekyll-include-cache    
     
 # Archives
+#=============================================
 jekyll-archives:
   enabled:
     - categories
@@ -60,10 +60,12 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
+#=============================================
 paginate: 6
 paginate_path: /page:num/
     
 # Other
+#=============================================
 markdown: kramdown
 
 kramdown:
@@ -83,12 +85,6 @@ lazyimages: "enabled"
 
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
 
-# Other
-#=============================================
-markdown: kramdown
-highlighter: rouge
-
-include: ['_pages']
 
 permalink: /:title
 page_permalink: /:title
