@@ -1,9 +1,15 @@
 
 <!DOCTYPE html>
+{% if page.id%}
 <html lang="{{ site.content_lang }}"
       itemscope 
       itemtype="http://schema.org/Article" 
       prefix="og: http://ogp.me/ns#" >
+{% else %}    
+<html lang="{{ site.content_lang }}"
+      itemscope 
+      prefix="og: http://ogp.me/ns#" >
+{% endif %}      
 <head>
    {% include head.html %}   	 
 </head>
