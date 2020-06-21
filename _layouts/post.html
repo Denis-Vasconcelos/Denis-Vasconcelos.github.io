@@ -7,10 +7,8 @@ post_class: post-template
 
 <!-- Begin Article
 ================================================== -->
-
+<div class="container">
 	<div class="row">
-
-	
 		<!-- Post -->        
         {% assign author = site.authors[page.author] %}
         
@@ -86,29 +84,20 @@ post_class: post-template
 				</div>				
                 {% endif %}
             
+                {% include post_categories.html %}	      
+                {% include post_links.html %}
+                {% include post_newsletter.html %}
+            {% include post_recent.html %}
+            {% comment %}
+                {% include post_pagination.html %}		       
+            {% endcomment %}                
              
-<!-- Begin Comments
-====== ============================================ -->
-{% if page.comments %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
                 {% include comments_disqus.html %}
-            </div>
-        </div>
-    </div>
-{% endif %}
-<!--End Comments
-================================================== -->
-
             
 
 		</div>
 		<!-- End Post -->
-        
-        
-
 	</div>
-
+</div>
 <!-- End Article
 ================================================== -->
