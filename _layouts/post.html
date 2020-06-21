@@ -84,14 +84,23 @@ post_class: post-template
 				</div>				
                 {% endif %}
             
+            </br>
+        </br>
+
                 {% include post_categories.html %}	      
+            </br>
                 {% include post_links.html %}
+            </br>
+            {% comment %}                
                 {% include post_newsletter.html %}
-            {% include post_recent.html %}
+            {% endcomment %}                
+        </br>
+                {% include post_recent.html %}
+            </br>
             {% comment %}
                 {% include post_pagination.html %}		       
             {% endcomment %}                
-             
+        </br>
                 {% include comments_disqus.html %}
             
 
