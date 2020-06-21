@@ -20,7 +20,7 @@ layout: null
         <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <author>{{ site.owner.name }}</author>
+        <author>{{ author.display_name }}</author>
         {% if post.summaryfeed and post.excerpt %}
           <description>{{ post.excerpt | xml_escape }}</description>
         {% else %}
