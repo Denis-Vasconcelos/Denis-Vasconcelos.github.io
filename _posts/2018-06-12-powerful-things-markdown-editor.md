@@ -3,7 +3,7 @@ layout: post
 title:  "Powerful things you can do with the Markdown editor"
 author: sal
 categories: [ Jekyll, tutorial ]
-image: assets/images/16.jpg
+image: assets/images/16.webp
 ---
 There are lots of powerful things you can do with the Markdown editor. If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
 
@@ -89,7 +89,7 @@ printf("Hello World");
 
 
 
-![walking]({{ site.baseurl }}/assets/images/8.jpg)
+![walking]({{ site.baseurl }}/assets/images/8.webp)
 
 ## Reference lists
 
