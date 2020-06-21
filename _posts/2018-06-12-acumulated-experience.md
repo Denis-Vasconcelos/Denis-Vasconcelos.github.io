@@ -3,7 +3,7 @@ layout: post
 title:  "Accumulated experience of social living"
 author: Denis
 categories: [ Jekyll, tutorial ]
-image: assets/images/15.webp
+image: /assets/images/15.webp
 featured: true
 date: 2018-11-22 18:33:59 +0000
 meta_description: Axyz.
