@@ -2,6 +2,7 @@
 name: "Denis Vasconcelos"
 title: "Denis Vasconcelos"
 description: "Jekyll template, Medium styled, free for bloggers."
+content_lang: "pt-BR"
 logo: '/assets/images/logo.png'
 favicon: '/assets/images/logo.png'
 baseurl: /
@@ -10,6 +11,10 @@ disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
+enable_jumbotron_header: false
+enable_jumbotron_footer: false
+enable_alertbar: false
+enable_explorer: false
 
 # Authors
 authors:
@@ -31,9 +36,10 @@ authors:
 #=============================================
 plugins:
   - jekyll-paginate
-  - jekyll-feed
   - jekyll-archives
   - jekyll-include-cache    
+
+#  - jekyll-feed  
     
 # Archives
 #=============================================
