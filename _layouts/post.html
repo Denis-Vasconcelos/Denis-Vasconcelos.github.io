@@ -88,19 +88,16 @@ post_class: post-template
         </br>
 
                 {% include post_categories.html %}	      
-            </br>
-                {% include post_links.html %}
-            </br>
-            {% comment %}                
+
+                {% comment %}                      
+                {% include post_links.html %}          
                 {% include post_newsletter.html %}
-            {% endcomment %}                
-        </br>
                 {% include post_recent.html %}
-            </br>
-            {% comment %}
+                {% endcomment %}                
+
                 {% include post_pagination.html %}		       
-            {% endcomment %}                
-        </br>
+
+
                 {% include comments_disqus.html %}
             
 
