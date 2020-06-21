@@ -1,37 +1,52 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">    
-  <div class="container pr-0">    
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <!-- 
+    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}">
+    <img src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" alt="{{ site.name }}">
+    </a>
+    -->
     <a class="navbar-brand" href="{{ site.baseurl }}/">
         <h2 class="sitetitle">{{ site.title }}</h2>
-    </a>
-  
+    </a>    
+    <!-- End Logo -->
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMediumish">
-            <ul class="navbar-nav ml-auto" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-                        {% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = 'nav-item' %}
-            {% endif %}
-            {% if link.sublinks %}
-                <li class="nav-item dropdown" itemprop="name">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Navegue +</a> 
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">                    
-                        {% for sublink in link.sublinks %}
-                           <a class="dropdown-item" itemprop="url" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                        {% endfor %}
-                   </div>     
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                {% else %}
+                <li class="nav-item">
+                {% endif %}
+                <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
                 </li>
-            {% else %}
-                <li class="{{ class }}" itemprop="name">
-                    <a class = 'nav-link' itemprop="url" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+
+                <li class="nav-item">
+                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
                 </li>
-            {% endif %}
-        {% endfor %}
-            </ul>		
-    </div>  
+
+
+                {% include search-lunr.html %}
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
     </div>
 </nav>
+<!-- End Navigation
+================================================== -->
