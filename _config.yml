@@ -68,8 +68,6 @@ adsense-data-ad-slot: "1363087678"
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "enabled"
 
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
-
 
 permalink: /:title
 page_permalink: /:title
@@ -106,3 +104,16 @@ manifest_lang: pt-br
 manifest_background_color: white
 manifest_theme_color: white
 manifest_display: standalone
+
+
+
+
+exclude: 
+  - changelog.md
+  - LICENSE.txt
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - instantfeed.xml
+  - BingSiteAuth.xml
+  - old/
