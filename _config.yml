@@ -4,8 +4,8 @@ title: "Denis Vasconcelos"
 description: "Jekyll template, Medium styled, free for bloggers."
 meta_description: "Jekyll template, Medium styled, free for bloggers."
 content_lang: "pt-BR"
-logo: '/assets/images/logo.png'
-favicon: '/assets/images/logo.png'
+logo: '/assets/icons/favicon.ico'
+favicon: '/assets/icons/favicon.ico'
 baseurl: /
 google_analytics: 'UA-11722414-8'
 disqus: 'demowebsite'
