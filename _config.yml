@@ -2,6 +2,7 @@
 name: "Denis Vasconcelos"
 title: "Denis Vasconcelos"
 description: "Jekyll template, Medium styled, free for bloggers."
+meta_description: "Jekyll template, Medium styled, free for bloggers."
 content_lang: "pt-BR"
 logo: '/assets/images/logo.png'
 favicon: '/assets/images/logo.png'
