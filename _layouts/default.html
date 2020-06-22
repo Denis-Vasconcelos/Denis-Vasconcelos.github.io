@@ -13,9 +13,9 @@ layout: compress
 <html lang="{{ site.content_lang }}"
       prefix="og: http://ogp.me/ns#" >
 {% endif %}      
-<head>
-   {% include head.html %}   	 
-</head>
+
+{% include head.html %}   	 
+
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{layout}}">
