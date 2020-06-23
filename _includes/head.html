@@ -1,13 +1,5 @@
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   {% comment %} <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">--> {% endcomment %} 
-   <link rel="alternate" href="{{ site.url }}" hreflang="pt-br" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-   {% include analytics.html %}  
-
-   <title>
+  <title>
     {%- if page.title -%}
       {{ page.title | smartify }} · {{ site.title | smartify }}
     {%- else -%}
@@ -15,13 +7,41 @@
     {%- endif -%}
   </title>
 
-  <meta name="description" content="{{ page.meta_description | default: site.meta_description }}">
+  <!-- META TAGS ============================================================= -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible"      content="IE=edge">
+  <meta name="viewport"                   content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly"           content="True">
+
+
+   {% comment %} <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">--> {% endcomment %} 
+   <link rel="alternate" href="{{ site.url }}" hreflang="{{ site.content_lang }}" />
+
+  <!-- GENERAL -->
+  <meta property="title"                  content="{{ page.title | default: site.title | smartify }}">
+  <meta name="description"                content="{{ page.meta_description | default: site.meta_description }}">
+  <meta name="author"                     content="AFP">
+  <link rel="canonical"                   href="{{ site.url }}{{ page.url }}" />
+  <meta name="robots"                     content="all" />
+  <meta name="referrer"                   content="always">
+  <meta name="language"                   content="{{ site.content_lang }}">
+
+
+  <!-- AMP -->
+  <!--<link rel="amphtml" href="https://jc.ne10.uol.com.br/mundo/2020/06/amp/5613620-oms-pede-aumento-da-producao-mundial-de-dexametasona-para-enfrentar-coronavirus.html">-->
+<!-- END META TAGS ============================================================= -->
+
+   {% include analytics.html %}  
+
+
+
+
   
    <!--Manifest used for enabling PWA-->
    <link rel="manifest" href="manifest.json">
    <meta name="theme-color" content="{{ site.manifest_theme_color | default: 'white' }}"/>  
 
-   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
 
    {% include meta/social.html %} 
    {% include meta/favicon.html %}  
