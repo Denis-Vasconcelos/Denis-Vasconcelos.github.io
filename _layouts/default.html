@@ -55,9 +55,9 @@ layout: compress
 
 </div> <!-- /.site-content -->
 
-{% comment %} 
+{% if site.enable_footer %} 
   {% include footer.html  %}
-{% endcomment %}
+{% endif %}
 
 {% include scripts.html %}    
 
