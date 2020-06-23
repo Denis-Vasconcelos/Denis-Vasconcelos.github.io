@@ -36,27 +36,21 @@ authors:
 #=============================================
 plugins:
   - jekyll-paginate
-<<<<<<< HEAD
 #  - jekyll-sitemap
 #  - jekyll-feed
 #  - jekyll-seo-tag
 # - Not supported by Github pages
-  #  - jekyll-archives
+#  - jekyll-archives
 
-=======
-  - jekyll-archives
-  - jekyll-include-cache    
-  - jekyll-feed  
-    
->>>>>>> parent of 48e6002... Enable/Disable Footer & Alertbar
+
 # Archives
 #=============================================
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
+#jekyll-archives:
+#  enabled:
+#    - categories
+#  layout: archive
+#  permalinks:
+#    category: '/category/:name/'
     
 # Pagination 
 #=============================================
