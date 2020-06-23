@@ -16,6 +16,7 @@ enable_jumbotron_header: false
 enable_jumbotron_footer: false
 enable_alertbar: false
 enable_explorer: false
+enable_footer: false
 
 # Authors
 authors:
@@ -36,19 +37,22 @@ authors:
 # Plugins
 #=============================================
 plugins:
-  - jekyll-paginate
-  - jekyll-archives
   - jekyll-include-cache    
-  - jekyll-feed  
-    
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+# - Not supported by Github pages
+  #  - jekyll-archives
+
 # Archives
 #=============================================
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
+#jekyll-archives:
+#  enabled:
+#    - categories
+#  layout: archive
+#  permalinks:
+#    category: '/category/:name/'
     
 # Pagination 
 #=============================================
@@ -75,8 +79,8 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 
-permalink: /:title
-page_permalink: /:title
+#permalink: /:title
+#page_permalink: /:title
 
 
 # Verification Tokens:

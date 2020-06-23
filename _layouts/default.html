@@ -23,15 +23,15 @@ layout: compress
     {{ content }}
 </div>
 
-{%comment %}
-    {% include alertbar.html %} 
-{% endcomment %}    
+{% if site.enable_alertbar == true %}
+   {% include alertbar.html %} 
+{% endif %}   
     
 </div><!-- /.container -->
 
 </div> <!-- /.site-content -->
 
-{%comment %}
+{% if site.enable_footer == true %}
     {% include footer.html %}  
 {% endcomment %}  
   
