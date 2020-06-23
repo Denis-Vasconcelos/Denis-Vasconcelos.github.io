@@ -16,7 +16,6 @@ enable_jumbotron_header: false
 enable_jumbotron_footer: false
 enable_alertbar: false
 enable_explorer: false
-enable_footer: false
 
 # Authors
 authors:
@@ -36,22 +35,28 @@ authors:
 # Plugins
 #=============================================
 plugins:
-  - jekyll-include-cache    
   - jekyll-paginate
+<<<<<<< HEAD
 #  - jekyll-sitemap
 #  - jekyll-feed
 #  - jekyll-seo-tag
 # - Not supported by Github pages
   #  - jekyll-archives
 
+=======
+  - jekyll-archives
+  - jekyll-include-cache    
+  - jekyll-feed  
+    
+>>>>>>> parent of 48e6002... Enable/Disable Footer & Alertbar
 # Archives
 #=============================================
-#jekyll-archives:
-#  enabled:
-#    - categories
-#  layout: archive
-#  permalinks:
-#    category: '/category/:name/'
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
     
 # Pagination 
 #=============================================

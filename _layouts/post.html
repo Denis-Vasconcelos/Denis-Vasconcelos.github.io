@@ -17,6 +17,7 @@ post_class: post-template
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
+<<<<<<< HEAD
 
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
@@ -35,6 +36,22 @@ post_class: post-template
                         <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
+=======
+        
+		<div class="col-sm-8">
+			<div class="mainheading">              
+                
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <ul class="tags">
+                        {% assign sortedCategories = page.categories | sort %}
+                        {% for category in sortedCategories %}
+                        <li>
+                         <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+>>>>>>> parent of 48e6002... Enable/Disable Footer & Alertbar
                 </div>
                 {% endif %}
 
