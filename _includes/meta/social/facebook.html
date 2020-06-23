@@ -1,10 +1,15 @@
+{% comment %}<!--<meta property="fb:admins" content="{{ site.facebook.admin_id }}" />-->{% endcomment %}
 <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
-{% comment %}<meta property="fb:admins" content="{{ site.facebook.admin_id }}" />{% endcomment %}
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:title" content="{{ page.title | default: site.title | smartify }}" />
 <meta property="og:description" content="{{ page.meta_description | default: site.meta_description | smartify }}">
+<meta property="og:image:secure_url"  content="{{ site.url | append: page.image }}">
+<meta property="og:image"  content="{{ site.url | replace: 'https://', 'http://' | append: page.image }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="300">
 {% if page.id %}
    <meta property="og:type" content="article">
    <meta property="article:author" content="https://www.facebook.com/{{ site.authors[page.author].facebook }}">
@@ -23,8 +28,3 @@
 {% else %}
    <meta property="og:type" content="website">
 {% endif %}
-<meta property="og:image:secure_url"  content="{{ site.url | append: page.image }}">
-<meta property="og:image"  content="{{ site.url | replace: 'https://', 'http://' | append: page.image }}">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="600">
-<meta property="og:image:height" content="300">
