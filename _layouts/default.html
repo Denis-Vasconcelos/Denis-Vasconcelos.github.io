@@ -47,13 +47,18 @@ layout: compress
     {{ content }}
 </div>
 
-{% include alertbar.html %} 
+{% if site.enable_alertbar  %}
+    {% include alertbar.html %} 
+{% end if %}   
     
 </div><!-- /.container -->
 
 </div> <!-- /.site-content -->
 
-{% include footer.html %}  
+{% comment %} 
+  {% include footer.html  %}
+{% endcomment %}
+
 {% include scripts.html %}    
 
 </body>
