@@ -1,5 +1,5 @@
 ---
 layout: categories2
-title: Airbnb
-permalink: /airbnb
+title: Cursos
+permalink: /cursos
 ---
