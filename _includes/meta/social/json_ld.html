@@ -1,0 +1,121 @@
+{% if page.title %}{% assign type = "BlogPosting" %}{% else %}{% assign type = "Blog" %}{% endif %}
+
+{% if page.layout == 'post' %}
+<!-- Google Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{{ type }}",
+    "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+    "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+    "mainEntityOfPage": {
+      "@type": "{{ type }}",
+      "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+    },
+    "name": "{{ page.title | default: site.title }}", 
+    "keywords": {% if page.tags %}{{ page.tags | join: ',' | jsonify }}{% endif %},  
+    "articleBody": {{ page.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip | jsonify }},    
+    "headline": "{{ page.title | default: site.title }}",
+    "description": "{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 140 }}{% else %}{{ site.meta_description }}{% endif %}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": {{ page.last_modified_at | default: page.date | jsonify }},    
+  {% if page.image %}
+    "image": {
+      "@type": "ImageObject",      
+      "url": "{{ site.url | append: page.image }}",
+      "width": 600,
+      "height": 300
+  },
+  {% endif %}  
+    "author": {
+      "@type": "Person",
+      "name": {{ site.authors[page.author].display_name | jsonify }},
+      "email": {{ site.authors[page.author].email | jsonify }} ,
+{% comment %}
+      "gender": "{{ site.authors[page.author].gender }}",
+      "birthDate": "{{ site.authors[page.author].birthDate }}",      
+      "jobTitle": "{{ site.authors[page.author].jobTitle }}", 
+{% endcomment %}    
+  {% if site.gravatar_url %}      
+      "image": {
+                "@type": "ImageObject",
+                "url": "{{ site.gravatar_url }}"
+               }, 
+  {% endif %}                 
+      "sameAs":[  
+        "https://www.facebook.com/{{ site.authors[page.author].facebook }}",
+        "https://www.twitter.com/{{ site.authors[page.author].twitter }}",
+        "http://instagram.com/{{site.authors[page.author].instagram}}",
+        "http://www.linkedin.com/in/{{site.authors[page.author].linkedin}}"      
+      ]      
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.meta_description | jsonify }},
+      "url": "{{ site.url }}",      
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",
+        "width": 32,
+        "height": 32
+      },
+      "sameAs":[  
+        "https://www.facebook.com/{{ site.facebook.publisher }}",      
+        "https://twitter.com/{{ site.twitter.username }}",
+        "http://instagram.com/{{site.instagram.username}}"
+      ]      
+    }
+ }
+  </script>
+
+{% else %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ site.title | jsonify }},
+      "url": "{{ site.url }}",
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.meta_description | jsonify }},
+      "url": "{{ site.url }}",      
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.logo | prepend: site.baseurl | prepend: site.url }}",
+        "width": 32,
+        "height": 32
+      },
+      "sameAs":[  
+        "https://www.facebook.com/{{ site.facebook.publisher }}",      
+        "https://twitter.com/{{ site.twitter.username }}",
+        "http://instagram.com/{{site.instagram.username}}"
+      ]      
+    },      
+    "author": {
+      "@type": "Person",
+      "name": {{ site.authors[0].display_name | jsonify }},
+      "email": {{ site.authors[0].email | jsonify }} ,
+{% comment %}
+      "gender": "{{ site.authors[0].gender }}",
+      "birthDate": "{{ site.authors[0].birthDate }}",      
+      "jobTitle": "{{ site.authors[0].jobTitle }}", 
+{% endcomment %}      
+  {% if site.gravatar_url %}      
+      "image": {
+                "@type": "ImageObject",
+                "url": "{{ site.gravatar_url }}"
+               }, 
+  {% endif %}                 
+      "sameAs":[  
+        "https://www.facebook.com/{{ site.authors[0].facebook }}",
+        "https://www.twitter.com/{{ site.authors[0].twitter }}",
+        "http://instagram.com/{{site.authors[0].instagram}}",
+        "http://www.linkedin.com/in/{{site.authors[0].linkedin}}"      
+      ]      
+    }, 
+      "keywords": "{{ site.keywords }}"
+    }
+  </script>
+{% endif %}
