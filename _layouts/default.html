@@ -23,13 +23,18 @@ layout: compress
     {{ content }}
 </div>
 
-{% include alertbar.html %} 
+{%comment %}
+    {% include alertbar.html %} 
+{% endcomment %}    
     
 </div><!-- /.container -->
 
 </div> <!-- /.site-content -->
 
-{% include footer.html %}  
+{%comment %}
+    {% include footer.html %}  
+{% endcomment %}  
+  
 {% include scripts.html %}    
 
 </body>
