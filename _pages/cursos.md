@@ -1,6 +1,5 @@
 ---
-layout: category_page
+layout: categories2
 title: Airbnb
 permalink: /airbnb
-category: Airbnb
 ---
