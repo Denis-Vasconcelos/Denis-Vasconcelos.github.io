@@ -36,8 +36,8 @@ authors:
 #=============================================
 plugins:
   - jekyll-paginate
-#  - jekyll-sitemap
-#  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-feed
 #  - jekyll-seo-tag
 # - Not supported by Github pages
 #  - jekyll-archives
