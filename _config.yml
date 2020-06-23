@@ -1,56 +1,45 @@
 # Site
-name: "Denis Vasconcelos"
-title: "Denis Vasconcelos"
+name: "Mediumish"
+title: "Mediumish"
 description: "Jekyll template, Medium styled, free for bloggers."
-meta_description: "Jekyll template, Medium styled, free for bloggers."
-content_lang: "pt-BR"
-logo: '/assets/icons/favicon.ico'
-favicon: '/assets/icons/favicon.ico'
-baseurl: /
-google_analytics: 'UA-11722414-8'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: /mediumish-theme-jekyll
+google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
-enable_jumbotron_header: false
-enable_jumbotron_footer: false
-enable_alertbar: false
-enable_explorer: false
 
 # Authors
 authors:
-  Denis:
-    name: Denis
-    display_name: "Denis Vasconcelos"    
-    description: "--"    
-    email: comtato@denisvasconcelos.com
-    web: https://www.denisvasconcelos.com
-    twitter: TrololodeMulher
-    facebook: denis.c.f.de.vasconcelos
-    image: http://Denis-Vasconcelos.github.io/foto.webp   
-    gravatar:  #b1f70d5531cb13d5190017257d35fab1
-    description: "Data Solutions Architect"
-  
+  sal:
+    name: Sal
+    display_name: Sal
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John    
+    avatar: 'assets/images/avatar.png'
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
 
 # Plugins
-#=============================================
 plugins:
   - jekyll-paginate
-<<<<<<< HEAD
-#  - jekyll-sitemap
-#  - jekyll-feed
-#  - jekyll-seo-tag
-# - Not supported by Github pages
-  #  - jekyll-archives
-
-=======
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
   - jekyll-archives
-  - jekyll-include-cache    
-  - jekyll-feed  
     
->>>>>>> parent of 48e6002... Enable/Disable Footer & Alertbar
 # Archives
-#=============================================
 jekyll-archives:
   enabled:
     - categories
@@ -59,12 +48,10 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-#=============================================
 paginate: 6
 paginate_path: /page:num/
     
 # Other
-#=============================================
 markdown: kramdown
 
 kramdown:
@@ -82,53 +69,4 @@ adsense-data-ad-slot: "1363087678"
 # Lazy Images ("enabled" or "disabled")
 lazyimages: "disabled"
 
-
-permalink: /:title
-page_permalink: /:title
-
-
-# Verification Tokens:
-#=============================================
-google_verify: 6GcW4Xv_-zM0VrPiBFV6ZbRiBxTFqnqCKss0FhVpgQk
-yandex_verify: b2faa0307b7e8465
-bing_verify: 9364933C71A3EB51D875FC6DAAC58033
-pinterest_verify: 0e0e098323a2c64fb4d724141de4e72e
-
-#Social Media
-#=============================================
-facebook:
-  admins: denis.c.f.de.vasconcelos
-  admin_id: 10219813809609428
-  publisher: TrololoMulher
-  app_id: 719577031932416
-  page_id: xxxx
-twitter:
-  username:  TrololoMulher
-
-
-#Icons & Colors
-#=============================================
-theme_color:
-background_color:
-
-#Manifest
-#=============================================
-manifest_name: "Denis Vasconcelos"
-manifest_short_name: "Denis Vasconcelos" # Appears in "Add to home screen" dialogues and may have other importance also
-manifest_lang: pt-br
-manifest_background_color: white
-manifest_theme_color: white
-manifest_display: standalone
-
-
-
-
-exclude: 
-  - changelog.md
-  - LICENSE.txt
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - instantfeed.xml
-  - BingSiteAuth.xml
-  - old/
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

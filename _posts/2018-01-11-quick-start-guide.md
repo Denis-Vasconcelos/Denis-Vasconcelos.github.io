@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Let's test spoilers"
-author: Denis
-categories: [ Jekyll, tutorial, Airbnb ]
-image: /assets/images/12.webp
+author: sal
+categories: [ Jekyll, tutorial ]
+image: assets/images/12.jpg
 featured: true
 hidden: true
 ---

@@ -17,7 +17,6 @@ post_class: post-template
 
         <!-- Post -->
         {% assign author = site.authors[page.author] %}
-<<<<<<< HEAD
 
         <div class="col-md-9 flex-first flex-md-unordered">
             <div class="mainheading">
@@ -36,22 +35,6 @@ post_class: post-template
                         <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
-=======
-        
-		<div class="col-sm-8">
-			<div class="mainheading">              
-                
-                <!-- Post Categories -->
-                <div class="after-post-tags">
-                    <ul class="tags">
-                        {% assign sortedCategories = page.categories | sort %}
-                        {% for category in sortedCategories %}
-                        <li>
-                         <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
->>>>>>> parent of 48e6002... Enable/Disable Footer & Alertbar
                 </div>
                 {% endif %}
 
@@ -140,10 +123,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
@@ -159,11 +142,11 @@ post_class: post-template
 
 <!-- Begin Comments
 ================================================== -->
-{% if page.comments %}
+{% if page.comments != false %}
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-                {% include comments_disqus.html %}
+                {% include disqus.html %}
             </div>
         </div>
     </div>
