@@ -38,9 +38,9 @@ authors:
 plugins:
   - jekyll-include-cache    
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
+#  - jekyll-sitemap
+#  - jekyll-feed
+#  - jekyll-seo-tag
 # - Not supported by Github pages
   #  - jekyll-archives
 
