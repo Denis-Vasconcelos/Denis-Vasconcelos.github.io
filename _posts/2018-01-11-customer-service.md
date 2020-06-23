@@ -2,7 +2,7 @@
 layout: post
 title:  "Inception Movie"
 author: Denis
-categories: [ Jekyll, tutorial ]
+categories: [ Jekyll, tutorial, Airbnb ]
 tags: [red, yellow]
 image: /assets/images/11.webp
 description: "My review of Inception movie. Acting, plot and something else in this short description."
