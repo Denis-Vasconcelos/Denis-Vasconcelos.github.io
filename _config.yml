@@ -11,7 +11,7 @@ google_analytics: 'UA-11722414-8'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:title/
+permalink: /:title
 enable_jumbotron_header: false
 enable_jumbotron_footer: false
 enable_alertbar: false
@@ -50,12 +50,12 @@ plugins:
 #    - categories
 #  layout: archive
 #  permalinks:
-#    category: '/category/:name/'
+#    category: '/category/:name'
     
 # Pagination 
 #=============================================
 paginate: 6
-paginate_path: /page:num/
+paginate_path: /page:num
     
 # Other
 #=============================================
