@@ -55,7 +55,7 @@ plugins:
 # Pagination 
 #=============================================
 paginate: 6
-paginate_path: /page:num
+paginate_path: /page:num/
     
 # Other
 #=============================================
