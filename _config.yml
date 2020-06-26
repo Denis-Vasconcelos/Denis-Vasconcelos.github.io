@@ -11,7 +11,7 @@ google_analytics: 'UA-11722414-8'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
-permalink: /:title
+permalink: /:title/
 enable_jumbotron_header: false
 enable_jumbotron_footer: false
 enable_alertbar: false
@@ -77,8 +77,8 @@ adsense-data-ad-slot: "1363087678"
 lazyimages: "disabled"
 
 
-permalink: /:title
-page_permalink: /:title
+permalink: /:title/
+page_permalink: /:title/
 
 
 # Verification Tokens:

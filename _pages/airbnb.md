@@ -1,6 +1,6 @@
 ---
 layout: category_page
 title: Airbnb
-permalink: /airbnb
+permalink: /airbnb/
 category: Airbnb
 ---
